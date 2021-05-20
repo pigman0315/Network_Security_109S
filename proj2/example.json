@@ -1,0 +1,151 @@
+{
+	"_index":"logstash-netsec.proj2-2021.04.08",
+	"_type":"_doc",
+	"_id":"_qgJsHgBrjaDa8NYr9a_",
+	"_score":0,
+	"_source":
+	{
+		"source":
+		{
+			"port":1783,
+			"ip":"192.168.1.115",
+			"bytes":376
+		},
+		"related":
+		{
+			"ip":["192.168.1.115","163.28.5.80"],
+			"hosts":["assets.msn.com"]
+		},
+		"server":
+		{
+			"port":80,
+			"domain":"assets.msn.com",
+			"bytes":4279,
+			"ip":"163.28.5.80"
+		},
+		"query":"GET /service/weather/LiveTile/back",
+		"status":"OK",
+		"host":
+		{
+			"id":"c62e5911-6d2a-44e8-85e6-f79e7c0d24a8",
+			"os":
+			{
+				"platform":"windows",
+				"name":"Windows 10 Pro",
+				"build":"19042.867",
+				"version":"10.0",
+				"type":"windows",
+				"kernel":"10.0.19041.867 (WinBuild.160101.0800)",
+				"family":"windows"
+			},
+			"name":"DESKTOP-LROCM87",
+			"mac":["00:0c:29:f3:32:da"],
+			"hostname":"DESKTOP-LROCM87",
+			"ip":["fe80::6466:ef36:a1:aa75","192.168.1.115"],
+			"architecture":"x86_64"
+		},
+		"tags":["beats_input_raw_event"],
+		"method":"get",
+		"event":
+		{
+			"end":"2021-04-08T05:51:59.872Z",
+			"category":["network_traffic","network"],
+			"kind":"event",
+			"duration":48105000,
+			"dataset":"http",
+			"type":["connection","protocol"],
+			"start":"2021-04-08T05:51:59.824Z"
+		},
+		"fields":
+		{
+			"hostname":"netsec","logtag":"proj2"
+		},
+		"agent":
+		{
+			"ephemeral_id":"0778bfbe-fcf5-4c54-81cc-78efa4ce42c4",
+			"id":"15b829d2-7ed1-4e14-9c39-04a9193a4439",
+			"name":"DESKTOP-LROCM87",
+			"version":"7.12.0",
+			"hostname":"DESKTOP-LROCM87",
+			"type":"packetbeat"
+		},
+		"@timestamp":"2021-04-08T05:51:59.824Z",
+		"network":
+		{
+			"community_id":"1:xFRJX1nuevbzVRfm5YgQCPAozi0=",
+			"transport":"tcp",
+			"protocol":"http",
+			"direction":"egress",
+			"bytes":4655,
+			"type":"ipv4"
+		},
+		"client":
+		{
+			"port":1783,
+			"bytes":376,
+			"ip":"192.168.1.115"
+		},
+		"url":{
+			"domain":"assets.msn.com",
+			"path":"/service/weather/LiveTile/back",
+			"query":"activityId=0ac38555-4037-4ede-be41-10674c46b01c&apiKey=OkWqHMuutahBXs3dBoygqCjgXRt6CV4i5V7SRQURrT&appId=9e21380c-ff19-4c78-b4ea-19558e93a5d3&formcode=WTHRST&ids=&lat=38.90&locale=en-US&lon=-77.02&ocid=weather-app-win&region=US&units=F&wrapOData=false",
+			"scheme":"http",
+			"full":"http://assets.msn.com/service/weather/LiveTile/back?activityId=0ac38555-4037-4ede-be41-10674c46b01c&apiKey=OkWqHMuutahBXs3dBoygqCjgXRt6CV4i5V7SRQURrT&appId=9e21380c-ff19-4c78-b4ea-19558e93a5d3&formcode=WTHRST&ids=&lat=38.90&locale=en-US&lon=-77.02&ocid=weather-app-win&region=US&units=F&wrapOData=false"
+		},
+		"destination":
+		{
+			"port":80,
+			"domain":"assets.msn.com",
+			"bytes":4279,
+			"ip":"163.28.5.80"
+		},
+		"user_agent":
+		{
+			"original":"Microsoft-WNS/10.0"
+		},
+		"@version":"1",
+		"http":
+		{
+			"response":
+			{
+				"status_code":200,
+				"headers":
+				{
+					"content-type":"text/xml; charset=utf-8",
+					"content-length":3573
+				},
+				"status_phrase":"ok",
+				"bytes":4279,
+				"body":
+				{
+					"bytes":3573
+				}
+			},
+			"version":"1.1",
+			"request":
+			{
+				"method":"get",
+				"headers":
+				{
+					"content-length":0
+				},
+				"bytes":376
+			}
+		},
+		"type":"http",
+		"ecs":
+		{
+			"version":"1.8.0"
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+IP_scan: 掃內網內的ip，dest IP通常為192.168.x.x, dest port通常為443/80(port不太會有變化)
+Port_scan: 掃目標機器的不同的port, src IP單一, src port變化不大, dest IP單一, dst port變化很大
+DDoS: 攻擊同一台機器的port 22, src IP和port變化很大, dest IP/port完全沒有變化（IP固定且都是port 22）
+RDP_bruteforce: 連到目標機器的port 3389, src IP不太會變, src port變化很大, dest IP/port幾乎都固定(port都是3389)
+C&C: 受感染的機器連到外面跟壞人的控制中心拿指令，src IP不太會變, src port變化很大, dest IP/port變化很大(可以注意dest port可能會是一些不常用的port)
